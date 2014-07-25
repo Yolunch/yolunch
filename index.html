@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta name="description" content="yolunch">
+		<meta name="keywords" content="yolunch">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<meta name="author" content="Nathanael Lamelliere">
+		<meta charset="UTF-8">	
+	</head>
+<body>
+<div style="background-color:#9B59B6">
+	<ul class="nav nav-pills">
+  		<li class="active"><a href="index.html">Custom</a></li>
+  		<li><a href="saved.html">Saved</a></li>
+	</ul>	
+
+	<div align="center">
+		<h1>yo lunch</h1>
+	</div>
+
+	<form role="form" method="POST" action="http://api.justyo.co/yoall/">
+  		<div class="form-group">
+    		<input type=text name="api_token" class="form-control" id="apiToken" placeholder="Enter your API token">
+  		</div>
+  		<button type="submit" class="btn btn-primary btn-lg btn-block">yo lunch</button>
+	</form>
+
+	<form role="form" method="POST" action="http://api.justyo.co/yoall/">
+  		<div class="form-group">
+    		<input type="hidden" name="api_token" class="form-control" id="apiToken">
+  		</div>
+  		<div><a href="saved.html"><button type="submit" class="btn btn-primary2 btn-lg btn-block">SAVE</button></a></div>
+	</form>
+
+	<div id="yo-button">ici</div>
+
+</div>
+
+<script type="text/javascript">
+	var _yoData = {
+		"username": "ZLUNCHTIME",
+		"trigger": "when it's lunchtime"
+	};
+	var s = document.createElement("script");
+	s.type = "text/javascript";
+	s.src = "//yoapp.s3.amazonaws.com/js/yo-button.js";
+	(document.head || document.getElementsByTagName("head")[0]).appendChild(s);
+</script>
+
+</body>
+</html>

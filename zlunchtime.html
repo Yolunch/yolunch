@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta name="description" content="Zlunchtime">
+		<meta name="keywords" content="Zlunchtime">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<meta name="author" content="Nathanael Lamelliere">
+		<meta charset="UTF-8">
+	</head>
+
+<body>
+
+<div class="container" background-color"#804399">
+<ul class="nav nav-pills">
+  <li class="active"><a href="index.html">Custom</a></li>
+  <li><a href="saved.html">Saved</a></li>
+</ul>	
+
+<h1>Yo All!</h1>
+<form role="form" method="POST" action="http://api.justyo.co/yoall/">
+  <div class="form-group">
+    <input type="hidden" name="api_token" class="form-control" id="apiToken" value="a0a5e279-d1d9-5f3f-e324-ad9b20581189">
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg btn-block">Yo All!</button>
+</form>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $('form').submit(function(){
+    $.post('http://example.com/upload', function() {
+      window.location = 'http://google.com';
+    });
+    return false;
+  });
+});
+</script>
+
+</body>
+
+
+</html>
